@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS测试</title>
+
+        <style>
+            h1{
+                color: crimson;
+            }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="css/cssDemo.css">
+    </head>
+    <body>
+        <h1>CSS h1 测试</h1>
+
+        <p>这是一段文本。</p>
+        <p class="highlight">这是一个带有特殊样式的文本。</p>
+        <p id="important-text">这是一个重要的文本。</p>
+
+
+        <h1>选择本地文件</h1>
+        <input type="file" id="fileInput">
+        <button onclick="readFile()">读取文件</button>
+
+        <div id="fileContent">
+            <!-- 这里显示文件内容 -->
+        </div>
+
+        <script>
+            function readFile() {
+                const fileInput = document.getElementById('fileInput');
+                const file = fileInput.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const fileContent = e.target.result;
+                        document.getElementById('fileContent').textContent = fileContent;
+                    };
+                    reader.readAsText(file);
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+/* 将所有文本设置为红色和加粗 */
+body {
+    color: red;
+    font-weight: bold;
+}
+
+/* 或者，如果您只想将特定元素的文本设置为红色和加粗，可以使用类或ID选择器 */
+/* 例如，将具有 "highlight" 类的元素文本设置为红色和加粗 */
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+/* 或者，将具有 "important-text" ID 的元素文本设置为红色和加粗 */
+#important-text {
+    color: red;
+    font-weight: bold;
+}

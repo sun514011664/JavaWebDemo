@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--语言-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标题</title>
+
+    <meta charset="UTF-8">
+    <meta name="key worlds" content="css,javaWeb">
+    <meta name="description" content="一起学习Java">
+</head>
+<body>
+    hello world ！
+<!--    标题标签-->
+    <h1>标题标签</h1>
+    <h1>你好 HTML!</h1>
+    <h2>你好 HTML!</h2>
+    <h3>你好 HTML!</h3>
+    <h4>你好 HTML!</h4>
+    <h5>你好 HTML!</h5>
+    <h6>你好 HTML!</h6>
+<!--    段落标签-->
+    <h1>段落标签</h1>
+    <p>换行1</p>
+    <p>换行2</p>
+<!--    水平线-->
+    <hr/>
+<!--    换行符-->
+    123456<br>7890<br>
+<!--    加粗 斜体-->
+    加粗:<strong>加粗<br></strong>
+    斜体：<em>斜体</em>
+<!--    特殊符号-->
+    <h1>特殊符号</h1>
+    空格：&nbsp;<br>
+    大于号：&gt;<br>
+    小于号：&lt;<br>
+    版权符号：&copy;<br>
+    <hr>
+    <h1>图像标签</h1>
+    <img src="https://t7.baidu.com/it/u=2395394104,3824592949&fm=218&app=126&size=f242,150&n=0&f=JPEG&fmt=auto?s=BB81A0485FECB6495ED8140F030070C0&sec=1694451600&t=44ab43cc0f807beceafc0a0e7217e2de"
+    alt="图像不见了！" title="悬停显示文字！"><br>
+    超链接：<a href="https://www.baidu.com" target="_blank">百度</a>
+
+    图片超链接：<a href="https://www.baidu.com" target="_blank"><img src="https://t7.baidu.com/it/u=2395394104,3824592949&fm=218&app=126&size=f242,150&n=0&f=JPEG&fmt=auto?s=BB81A0485FECB6495ED8140F030070C0&sec=1694451600&t=44ab43cc0f807beceafc0a0e7217e2de"></a> <br>
+    <hr/>
+    <h1>有序 无序列表</h1>
+    <ol>有序列表
+        <li>123
+        <li>456
+        <li>789
+    </ol>
+
+    <ul>
+        <li>123
+        <ul>789
+            <li>qwe</li>
+            <li>asd</li>
+            <li>zxc</li>
+        </ul>
+        <li>456</li>
+    </ul>
+<!--    自定义表格-->
+    <dl>
+        <dt>学科</dt>
+        <dd>yu</dd>
+        <dd>shu</dd>
+        <dd>ying</dd>
+    </dl>
+
+<!--    视频-->
+    <video src="https://video-js.51miz.com/preview/video/00/00/16/13/V-161360-DB6F18CE.mp4" autoplay controls> </video><br>
+<!--    iframe-->
+    <iframe src="https://www.bilibili.com/"></iframe>
+
+<!--    表单-->
+    <h1>注册</h1>
+    <form action="处理注册的服务器端脚本.php" method="POST">
+        <label for="account">账号：</label>
+        <input type="text" id="account" name="account" required><br><br>
+
+        <label for="password">密码：</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">手机号：</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <input type="submit" value="注册">
+    </form>
+
+    <h1>百度搜索</h1>
+    <form action="https://www.baidu.com/s" method="GET">
+        <label for="searchQuery">请输入搜索关键字：</label>
+        <input type="text" id="searchQuery" name="wd" required>
+
+        <input type="submit" value="搜索">
+    </form>
+
+    <h1>请选择一个国家并进行搜索：</h1>
+    <form action="https://www.baidu.com/s" method="GET">
+        <label for="country">国家：</label>
+        <select id="country" name="wd">
+            <option value="中国">中国</option>
+            <option value="美国">美国</option>
+            <option value="俄罗斯">俄罗斯</option>
+            <option value="英国">英国</option>
+            <option value="法国">法国</option>
+        </select>
+        <input type="submit" value="搜索">
+    </form>
+
+    <p>搜索：<input type="search" name="search"></p>
+</body>
+</html>
